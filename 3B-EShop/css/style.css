@@ -198,7 +198,8 @@ body.lock {
   max-width: 1085px;
 }
 
-.container_how-to-sign-up {
+.container_how-to-sign-up,
+.container_faq {
   max-width: 1080px;
 }
 
@@ -1108,7 +1109,6 @@ textarea.input {
 .main-screen {
   padding: 107px 0px 77px 0px;
   min-height: 100vh;
-  background-color: #00247e;
 }
 
 .main-screen_home {
@@ -1118,12 +1118,29 @@ textarea.input {
   display: flex;
 }
 
+.main-screen_technik {
+  background: url("../img/main-screen/bg.jpg") 0 0/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-screen_category {
+  background-color: #00247e;
+}
+
 .main-screen__title {
   margin: 0px 0px 75px 0px;
   color: #fff;
   font-size: 72px;
   font-weight: 600;
-  line-height: 64px;
+  line-height: 86px;
   text-align: center;
 }
 
@@ -1629,6 +1646,70 @@ textarea.input {
   line-height: 22px;
 }
 
+.faq {
+  padding: 50px 0px;
+}
+
+.faq__title {
+  margin: 0px 0px 80px 0px;
+}
+
+.faq__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px -10px;
+}
+
+.faq__column {
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.faq__card {
+  margin: 0px 0px 30px 0px;
+}
+
+.card-faq {
+  width: 237px;
+  min-height: 362px;
+  padding: 20px 10px;
+  background: #ffffff;
+  -webkit-box-shadow: 3px 4px 18px rgba(0, 0, 0, 0.12);
+          box-shadow: 3px 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card-faq__title {
+  margin: 0px 0px 15.5px 0px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.card-faq__text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.card-faq__text p {
+  margin: 0px 0px 10px 0px;
+}
+
+.card-faq__text p:last-child {
+  margin: 0;
+}
+
 @media (min-width: 1023px) and (max-height: 1366px) {
   .button:hover {
     border: 2px solid #e84b1a;
@@ -2040,6 +2121,20 @@ textarea.input {
     max-width: 100%;
     padding: 0px 27px;
   }
+
+  .faq {
+    padding: 25px 0px;
+  }
+
+  .faq__title {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .faq__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2121,5 +2216,11 @@ textarea.input {
   .item-offer__footer ul {
     font-size: 16px;
     line-height: 21.6px;
+  }
+
+  .faq__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
