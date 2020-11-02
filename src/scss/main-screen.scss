@@ -14,6 +14,12 @@
 	&_category {
 		background-color: #00247e;
 	}
+	&_route {
+		background: url("../img/main-screen/bg.jpg") 0 0 / cover no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	&__title {
 		margin: 0px 0px 75px 0px;
 		color: #fff;
@@ -32,8 +38,6 @@
 			line-height: 58px;
 			margin: 0px 0px 60px 0px;
 		}
-	}
-	&__slider-ms {
 	}
 	@media (max-width: $l) {
 		padding: 139px 0px 75px 0px;
