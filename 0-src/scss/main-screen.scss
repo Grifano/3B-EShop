@@ -1,0 +1,41 @@
+.main-screen {
+	padding: 107px 0px 77px 0px;
+	min-height: 100vh;
+	&_home {
+		background: url("../img/main-screen/bg.jpg") 0 0 / cover no-repeat;
+		display: flex;
+	}
+	&_technik {
+		background: url("../img/main-screen/bg.jpg") 0 0 / cover no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&_category {
+		background-color: #00247e;
+	}
+	&__title {
+		margin: 0px 0px 75px 0px;
+		color: #fff;
+		font-size: 72px;
+		font-weight: 600;
+		line-height: 86px;
+		text-align: center;
+		&_align-left {
+			text-align: left;
+			@media (max-width: $l) {
+				text-align: center;
+			}
+		}
+		@media (max-width: $l) {
+			font-size: 48px;
+			line-height: 58px;
+			margin: 0px 0px 60px 0px;
+		}
+	}
+	&__slider-ms {
+	}
+	@media (max-width: $l) {
+		padding: 139px 0px 75px 0px;
+	}
+}

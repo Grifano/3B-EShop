@@ -1,0 +1,78 @@
+.seo {
+	padding: $mainPadding;
+	@media (max-width: $l) {
+		padding: $mainPaddingMobile;
+	}
+	&__row {
+		margin: 0 auto 40px;
+		max-width: 1080px;
+		padding: 0px 15px;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $l) {
+			max-width: 100%;
+			padding: 0;
+			flex-direction: column;
+		}
+	}
+
+	&__title {
+		text-align: left;
+		margin: 0px 10px 0px 0px;
+		&_v {
+			display: block;
+			@media (max-width: $l) {
+				display: none;
+			}
+		}
+		&_h {
+			display: none;
+			@media (max-width: $l) {
+				display: block;
+			}
+		}
+		@media (max-width: $l) {
+			margin: 0 auto 23.5px;
+			text-align: center;
+		}
+	}
+
+	&__description {
+		flex: 0 1 660px;
+		@media (max-width: $l) {
+			flex-grow: 1;
+			max-width: 100%;
+		}
+	}
+
+	&__image {
+		height: 367px;
+		margin: 0px 0px 30px 0px;
+		@media (max-width: $l) {
+			height: auto; // !  Возможно нужно вернуть фиксированый размер.
+			padding: 0px 0px 89.1% 0px; // ! Слишком портит качество
+			position: relative;
+		}
+		img {
+			max-width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+			@media (max-width: $l) {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 22px;
+		@media (max-width: $l) {
+			max-width: 100%;
+			padding: 0px 27px;
+		}
+	}
+}

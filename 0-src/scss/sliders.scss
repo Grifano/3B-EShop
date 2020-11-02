@@ -1,0 +1,203 @@
+// *** Main-screen slider
+.slider-ms {
+  padding: 0px 40px;
+  min-width: 0;
+  position: relative;
+  &__title {
+    margin: 0px 0px 80px 0px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    @media (max-width: $m) {
+      font-size: 18px;
+      line-height: 25px;
+      margin: 0px 0px 60px 0px;
+    }
+  }
+  &__body {
+  }
+  &__item {
+    text-align: center;
+    @media (max-width: 480px) {
+      margin: 0px 0px 30px 0px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__image {
+    display: inline-block;
+    width: 210px;
+    height: 176px;
+    position: relative;
+    img {
+      border-radius: 5px;
+      max-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    @media (min-width: 1023px) and (max-height: 1366px) {
+      &:hover {
+        border-radius: 5px;
+        box-shadow: inset 0px 0px 0px 5px #fff;
+      }
+    }
+  }
+}
+// *** Gallery slider
+// --- Slider-big ---
+.slider-big {
+  position: relative;
+  z-index: 1;
+  @media (max-width: $m) {
+    display: none;
+  }
+  &__item {
+    position: relative;
+    padding: 0px 0px 14.5% 0px;
+    * {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    @media (max-width: 480px) {
+      margin: 0px 0px 30px 0px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+// --- Slider-small ---
+.slider-small {
+  position: relative;
+  &__body {
+  }
+  &__item {
+    width: 326px;
+    height: 252px;
+    margin: 0px 12.5px;
+    position: relative;
+    z-index: 1;
+    * {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+    @media (max-width: $m) {
+      margin: 0px 12.5px 30px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  // background-color: #ccc;
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  // background-color: #fff;
+  display: flex;
+}
+/* Слайд */
+.slick-slide {
+  @media (max-width: $m) {
+    opacity: 0.7;
+  }
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slider-small .slick-slide.slick-current {
+  @media (max-width: $m) {
+    opacity: 1;
+  }
+}
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slider-ms__body .slick-arrow {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  position: absolute;
+  bottom: 78px;
+  padding: 10px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+  @media (min-width: 1023px) and (max-height: 1366px) {
+    &:hover {
+      border-radius: 50%;
+      box-shadow: inset 0px 0px 0px 1px #fff;
+    }
+  }
+}
+/* Стрелка влево */
+.slider-ms__body .slick-arrow.slick-prev {
+  left: 0px;
+  background: url("../img/icons/p-left.svg") center no-repeat;
+}
+/* Стрелка вправо */
+.slider-ms__body .slick-arrow.slick-next {
+  right: 0px;
+  background: url("../img/icons/p-right.svg") center no-repeat;
+}
+/* Стрелка не активная */
+.slider-ms__body .slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
