@@ -852,12 +852,11 @@ textarea.input {
 }
 
 .slider-atv__item {
+  margin: 0px 5px;
   text-align: center;
 }
 
 .slider-atv__image {
-  width: 280px;
-  height: 206px;
   display: inline-block;
 }
 

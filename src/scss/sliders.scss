@@ -81,6 +81,7 @@
     }
   }
   &__item {
+    margin: 0px 5px;
     text-align: center;
     @media (max-width: 480px) {
       margin: 0px 0px 30px 0px;
@@ -90,8 +91,8 @@
     }
   }
   &__image {
-    width: 280px;
-    height: 206px;
+    // width: 280px;
+    // height: 206px;
     display: inline-block;
     img {
       max-width: 100%;
