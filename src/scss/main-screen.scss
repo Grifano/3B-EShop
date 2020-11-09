@@ -1,6 +1,9 @@
 .main-screen {
-	padding: 107px 0px 77px 0px;
+	padding: 100px 0px 50px 0px;
 	min-height: 100vh;
+	@media (max-width: $l) {
+		padding: 139px 0px 75px 0px;
+	}
 	&_home {
 		background: url("../img/main-screen/bg.jpg") 0 0 / cover no-repeat;
 		display: flex;
@@ -19,6 +22,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@media (max-width: $l) {
+			padding: 139px 0px 60px 0px;
+		}
 	}
 	&__title {
 		margin: 0px 0px 75px 0px;
@@ -27,19 +33,27 @@
 		font-weight: 600;
 		line-height: 86px;
 		text-align: center;
+		@media (max-width: $l) {
+			max-width: 262px;
+			font-size: 48px;
+			line-height: 58px;
+			margin: 0 auto 25px;
+		}
 		&_align-left {
 			text-align: left;
 			@media (max-width: $l) {
 				text-align: center;
 			}
 		}
-		@media (max-width: $l) {
-			font-size: 48px;
-			line-height: 58px;
-			margin: 0px 0px 60px 0px;
+		&_category {
+			@media (max-width: $l) {
+				max-width: 336px;
+			}
 		}
-	}
-	@media (max-width: $l) {
-		padding: 139px 0px 75px 0px;
+		&_technik {
+			@media (max-width: $l) {
+				max-width: 360px;
+			}
+		}
 	}
 }

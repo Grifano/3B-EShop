@@ -1,0 +1,148 @@
+.registration {
+	padding: $mainPadding;
+	@media (max-width: $l) {
+		padding: $mainPaddingMobile;
+	}
+	&__title {
+		max-width: 720px;
+		padding: 0px 10px;
+		margin: 0px auto 20px;
+	}
+
+	&__block-1 {
+		padding: $mainPadding;
+		@media (max-width: $l) {
+			padding: $mainPaddingMobile;
+		}
+	}
+
+	&__map {
+	}
+
+	&__block-subtitle {
+		margin: 0px 0px 75px 68px;
+		@media (max-width: $l) {
+			margin: 0px 0px 60px 0px;
+		}
+	}
+
+	&__block-2 {
+		padding: $mainPadding;
+		@media (max-width: $l) {
+			padding: $mainPaddingMobile;
+		}
+	}
+
+	&__row-cards {
+	}
+}
+.map-registration {
+	max-width: 1030px;
+	margin: 0 auto;
+	&__header {
+		padding: 0px 30px;
+		background-color: $mainColor;
+		position: relative;
+		select {
+			width: 100%;
+			font-size: 24px;
+			line-height: 75px;
+			color: #fff;
+			background-color: transparent;
+			appearance: none;
+			text-align-last: center;
+			@media (max-width: $l) {
+				font-size: 18px;
+				line-height: 75px;
+			}
+		}
+		&::after {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 15px;
+			position: absolute;
+			top: 50%;
+			right: 30px;
+			margin: -7.5px 0px 0px 0px;
+			background: url("../img/registration/arrow.svg") 0 0 / contain no-repeat;
+		}
+		@media (max-width: $l) {
+			padding: 0px 10px;
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&__map {
+		background-color: #fff;
+		padding: 0px 0px 58.9% 0px;
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+}
+.row-cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0px -22.5px;
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 0px 22.5px;
+		margin: 0px 0px 45px 0px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+.card-atv {
+	max-width: 355px;
+	box-shadow: 3px 4px 18px rgba(0, 0, 0, 0.12);
+	border-radius: 5px;
+	background-color: #fff;
+	overflow: hidden;
+	&__body {
+		padding: 20px 40px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__lable {
+		margin: 0px 0px 30px 0px;
+		max-width: 250px;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+		li {
+			margin: 0px 0px 10px 0px;
+			&:last-child {
+				font-weight: 600;
+				font-size: 36px;
+				line-height: 48px;
+				margin: 0;
+			}
+		}
+	}
+
+	&__slider-atv {
+	}
+	&__arrows {
+	}
+	&__price {
+		width: 100%;
+		text-align: center;
+		font-size: 24px;
+		line-height: 51px;
+		color: #fff;
+		background-color: $mainColor;
+	}
+}

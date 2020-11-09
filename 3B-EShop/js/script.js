@@ -1,4 +1,4 @@
-// Dynamic Adapt v.1
+// // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),position(digi),when(breakpoint)"
 // e.x. data-da="item,2,992"
 // Andrikanych Yevhen 2020
@@ -203,7 +203,7 @@ $('.slider-ms__body').slick({
 	infinite: true,
 	speed: 300,
 	slidesToShow: 4,
-	slidesToScroll: 4,
+	slidesToScroll: 1,
 	responsive: [
 		{
 			breakpoint: 1024,
@@ -214,7 +214,7 @@ $('.slider-ms__body').slick({
 			}
 		},
 		{
-			breakpoint: 600,
+			breakpoint: 768,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2,
@@ -227,7 +227,7 @@ $('.slider-ms__body').slick({
 		}
 	]
 });
-// ===Galery=========================================================================================================================
+// *** Galery ***
 $('.slider-big__body').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -258,8 +258,9 @@ $('.slider-small__body').slick({
 	]
 });
 $('.slider-small__body_home').slick({
-	slidesToShow: 4,
+	slidesToShow: 3,
 	slidesToScroll: 1,
+	// asNavFor: '.slider-big__body',
 	arrows: false,
 	dots: false,
 	centerMode: true,
@@ -277,5 +278,13 @@ $('.slider-small__body_home').slick({
 			}
 		},
 	]
+});
+// *** Slider-card-atv ***
+$('.slider-atv__body').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
+	// appendArrows: '.slider-atv__arrows',
+	// variableWidth: true,
 });
 // ===/Slider config=========================================================================================================================

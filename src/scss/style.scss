@@ -26,7 +26,7 @@ $mainTextColor: #232323;
 $mainPadding: 50px 0px;
 $mainPaddingMobile: 25px 0px;
 // Brackepoints:
-$mw: 1180px;
+$mw: 1190px;
 $xl: 1023px;
 $x: 999px;
 $l: 769px;
@@ -68,6 +68,10 @@ body {
 	max-width: $mw;
 	margin: 0 auto;
 	padding: 0px 15px;
+	@media (max-width: $m) {
+		width: 100%;
+		padding: 0;
+	}
 	&_ms {
 		display: flex;
 		align-items: center;
@@ -91,6 +95,16 @@ body {
 		max-width: 1080px;
 	}
 	&_technik {
+		@media (max-width: $m) {
+			width: 100%;
+			padding: 0;
+		}
+	}
+	&_route {
+		max-width: 1270px;
+	}
+	&_route-offer {
+		max-width: 1140px;
 		@media (max-width: $m) {
 			width: 100%;
 			padding: 0;
@@ -125,6 +139,27 @@ body {
 		margin: 0px 0px 50px 0px;
 	}
 }
+.block-subtitle {
+	display: flex;
+	align-items: center;
+	&__title {
+		margin: 0px 0px 0px 40px;
+		font-size: 36px;
+		line-height: 43px;
+		font-weight: 600;
+		color: $mainTextColor;
+		@media (max-width: $l) {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	&__circular-icon {
+	}
+	@media (max-width: $l) {
+		justify-content: center;
+	}
+}
 //</Одинаковые стили>====================================================================================================
 // *** Main-screen ***
 @import "main-screen.scss";
@@ -148,6 +183,8 @@ body {
 @import "technik.scss";
 // *** Route ***
 @import "route.scss";
+// *** Registartion ***
+@import "registration.scss";
 //====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================

@@ -1,7 +1,7 @@
 .address {
-	padding: 70px 0px 50px 0px;
+	padding: $mainPadding;
 	@media (max-width: $l) {
-		padding: 50px 0px 25px 0px;
+		padding: $mainPaddingMobile;
 	}
 	&__title {
 		margin: 0px 0px 80px 0px;

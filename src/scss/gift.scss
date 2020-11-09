@@ -1,10 +1,10 @@
 .gift {
-	padding: 80px 0px 50px 0px;
+	padding: $mainPadding;
 	color: #fff;
 	min-height: 100vh;
 	position: relative;
 	@media (max-width: $l) {
-		padding: 50px 0px 20px 0px;
+		padding: $mainPaddingMobile;
 	}
 	&__background {
 		position: absolute;
