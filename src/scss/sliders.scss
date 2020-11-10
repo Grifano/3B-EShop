@@ -63,8 +63,8 @@
     }
   }
 }
-// *** Slider-ATV ***
-.slider-atv {
+// *** slider-cards ***
+.slider-cards {
   width: 100%;
   position: relative;
   &__body {
@@ -79,6 +79,12 @@
       line-height: 43px;
       color: $mainColor;
     }
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 600;
+    color: #000000;
   }
   &__item {
     margin: 0px 5px;
@@ -226,7 +232,7 @@
   right: 0px;
   background: url("../img/icons/p-right.svg") center no-repeat;
 }
-.slider-atv__body .slick-arrow {
+.slider-cards__body .slick-arrow {
   padding: 15px;
   font-size: 0;
   border-radius: 50%;
@@ -241,16 +247,16 @@
   }
 }
 /* Стрелка влево */
-.slider-atv__body .slick-prev {
+.slider-cards__body .slick-prev {
   left: 50%;
   margin: 0px 0px 0px -40px;
-  background: url("../img/registration/images/slider-atv/arrow-l.svg") center no-repeat;
+  background: url("../img/registration/images/slider-cards/arrow-l.svg") center no-repeat;
 }
 /* Стрелка вправо */
-.slider-atv__body .slick-next {
+.slider-cards__body .slick-next {
   right: 50%;
   margin: 0px -40px 0px 0px;
-  background: url("../img/registration/images/slider-atv/arrow-r.svg") center no-repeat;
+  background: url("../img/registration/images/slider-cards/arrow-r.svg") center no-repeat;
 }
 /* Стрелка не активная */
 .slider-ms__body .slick-arrow.slick-disabled {

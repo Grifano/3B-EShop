@@ -99,12 +99,12 @@ $('.slider-small__body_home').slick({
 		},
 	]
 });
-// *** Slider-card-atv ***
-$('.slider-atv__body').slick({
+// *** Slider-card-item ***
+$('.slider-cards__body').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: true,
-	// appendArrows: '.slider-atv__arrows',
+	// appendArrows: '.slider-cards__arrows',
 	// variableWidth: true,
 });
 // ===/Slider config=========================================================================================================================

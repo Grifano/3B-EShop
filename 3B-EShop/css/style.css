@@ -824,16 +824,16 @@ textarea.input {
   transition: all 0.3s ease 0s;
 }
 
-.slider-atv {
+.slider-cards {
   width: 100%;
   position: relative;
 }
 
-.slider-atv__body {
+.slider-cards__body {
   margin: 0px 0px 20px 0px;
 }
 
-.slider-atv__count {
+.slider-cards__count {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,22 +845,29 @@ textarea.input {
           justify-content: center;
 }
 
-.slider-atv__count span {
+.slider-cards__count span {
   font-size: 36px;
   line-height: 43px;
   color: #00247e;
 }
 
-.slider-atv__item {
+.slider-cards__title {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.slider-cards__item {
   margin: 0px 5px;
   text-align: center;
 }
 
-.slider-atv__image {
+.slider-cards__image {
   display: inline-block;
 }
 
-.slider-atv__image img {
+.slider-cards__image img {
   max-width: 100%;
   min-height: 100%;
   -o-object-fit: cover;
@@ -969,7 +976,7 @@ textarea.input {
   background: url("../img/icons/p-right.svg") center no-repeat;
 }
 
-.slider-atv__body .slick-arrow {
+.slider-cards__body .slick-arrow {
   padding: 15px;
   font-size: 0;
   border-radius: 50%;
@@ -982,18 +989,18 @@ textarea.input {
 
 /* Стрелка влево */
 
-.slider-atv__body .slick-prev {
+.slider-cards__body .slick-prev {
   left: 50%;
   margin: 0px 0px 0px -40px;
-  background: url("../img/registration/images/slider-atv/arrow-l.svg") center no-repeat;
+  background: url("../img/registration/images/slider-cards/arrow-l.svg") center no-repeat;
 }
 
 /* Стрелка вправо */
 
-.slider-atv__body .slick-next {
+.slider-cards__body .slick-next {
   right: 50%;
   margin: 0px -40px 0px 0px;
-  background: url("../img/registration/images/slider-atv/arrow-r.svg") center no-repeat;
+  background: url("../img/registration/images/slider-cards/arrow-r.svg") center no-repeat;
 }
 
 /* Стрелка не активная */
@@ -1191,6 +1198,7 @@ textarea.input {
 }
 
 .block-subtitle {
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1205,6 +1213,12 @@ textarea.input {
   line-height: 43px;
   font-weight: 600;
   color: #232323;
+}
+
+.block-subtitle__circular-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .main-screen {
@@ -1375,8 +1389,8 @@ textarea.input {
 
 .offer__item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 33.333%;
-          flex: 1 1 33.333%;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin: 0px 10px 30px 10px;
 }
 
@@ -1402,17 +1416,15 @@ textarea.input {
 
 .item-offer_technik {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   max-width: 500px;
   padding: 0px 0px 30px 0px;
   margin-bottom: 25px;
 }
 
 .item-offer_route {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 500px;
-          flex: 0 1 500px;
+  max-width: 500px;
   border-radius: 5px 5px 0px 0px;
   padding: 0px 0px 35px 0px;
   margin: 0px 0px 25px 0px;
@@ -1520,6 +1532,10 @@ textarea.input {
   padding: 0px 0px 70px 0px;
   border-bottom: 1px solid rgba(35, 35, 35, 0.1);
   position: relative;
+}
+
+.item-offer__description_technik {
+  padding: 0px 0px 70px 0px;
 }
 
 .item-offer__description ul {
@@ -1954,13 +1970,20 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .route-description__row li {
-  margin: 0px 10px;
-  padding: 0px 10px;
+  margin: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   min-width: 295px;
-  min-height: 183px;
+  height: 183px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2000,6 +2023,10 @@ textarea.input {
 }
 
 .registration__block-2 {
+  padding: 50px 0px;
+}
+
+.registration__block-3 {
   padding: 50px 0px;
 }
 
@@ -2156,7 +2183,7 @@ textarea.input {
             box-shadow: inset 0px 0px 0px 1px #fff;
   }
 
-  .slider-atv__body .slick-arrow:hover {
+  .slider-cards__body .slick-arrow:hover {
     border-radius: 50%;
     -webkit-box-shadow: inset 0px 0px 0px 1px #00247e;
             box-shadow: inset 0px 0px 0px 1px #00247e;
@@ -2196,10 +2223,6 @@ textarea.input {
 }
 
 @media (max-width: 999px) {
-  .offer__item {
-    margin: 0px 10px 40px;
-  }
-
   .gift__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2240,6 +2263,11 @@ textarea.input {
   .container_address {
     padding: 0;
     margin: 0;
+  }
+
+  .container_route-offer {
+    width: 100%;
+    padding: 0;
   }
 
   .icon-menu {
@@ -2481,12 +2509,6 @@ textarea.input {
             flex: 1 1 auto;
   }
 
-  .item-offer_route {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-  }
-
   .item-offer__title_home h3 {
     font-size: 24px;
     line-height: 29px;
@@ -2644,23 +2666,8 @@ textarea.input {
             flex: 1 1 50%;
   }
 
-  .route-description__row {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
   .route-description__row li {
-    margin: 0px 0px 45px 0px;
-  }
-
-  .route-description__row li:last-child {
-    margin: 0;
+    max-width: 295px;
   }
 
   .registration {
@@ -2676,6 +2683,10 @@ textarea.input {
   }
 
   .registration__block-2 {
+    padding: 25px 0px;
+  }
+
+  .registration__block-3 {
     padding: 25px 0px;
   }
 
@@ -2701,6 +2712,12 @@ textarea.input {
   }
 }
 
+@media (max-width: 550px) {
+  .offer__item {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
 @media (max-width: 480px) {
   .slider-ms__item {
     margin: 0px 0px 30px 0px;
@@ -2710,11 +2727,11 @@ textarea.input {
     margin: 0;
   }
 
-  .slider-atv__item {
+  .slider-cards__item {
     margin: 0px 0px 30px 0px;
   }
 
-  .slider-atv__item:last-child {
+  .slider-cards__item:last-child {
     margin: 0;
   }
 
@@ -2734,11 +2751,6 @@ textarea.input {
   }
 
   .container_technik {
-    width: 100%;
-    padding: 0;
-  }
-
-  .container_route-offer {
     width: 100%;
     padding: 0;
   }
@@ -2785,6 +2797,10 @@ textarea.input {
     margin: 0px 0px 40px 0px;
   }
 
+  .item-offer_route {
+    max-width: 100%;
+  }
+
   .item-offer__image_category {
     padding: 0px 0px 84.6% 0px;
   }
@@ -2802,9 +2818,17 @@ textarea.input {
     line-height: 27px;
   }
 
+  .item-offer__description {
+    margin: 0px 25px 8px;
+  }
+
   .item-offer__footer ul {
     font-size: 16px;
     line-height: 21.6px;
+  }
+
+  .item-offer__button_description {
+    top: 150px;
   }
 
   .faq__column {

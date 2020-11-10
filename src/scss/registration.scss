@@ -32,6 +32,12 @@
 			padding: $mainPaddingMobile;
 		}
 	}
+	&__block-3 {
+		padding: $mainPadding;
+		@media (max-width: $l) {
+			padding: $mainPaddingMobile;
+		}
+	}
 
 	&__row-cards {
 	}
@@ -94,7 +100,6 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 0px -22.5px;
-
 	&__column {
 		flex: 0 1 33.333%;
 		padding: 0px 22.5px;
@@ -132,7 +137,6 @@
 			}
 		}
 	}
-
 	&__slider-atv {
 	}
 	&__arrows {

@@ -105,7 +105,7 @@ body {
 	}
 	&_route-offer {
 		max-width: 1140px;
-		@media (max-width: $m) {
+		@media (max-width: $l) {
 			width: 100%;
 			padding: 0;
 		}
@@ -140,6 +140,7 @@ body {
 	}
 }
 .block-subtitle {
+	max-width: 100%;
 	display: flex;
 	align-items: center;
 	&__title {
@@ -155,6 +156,7 @@ body {
 	}
 
 	&__circular-icon {
+		flex: 0 0 auto;
 	}
 	@media (max-width: $l) {
 		justify-content: center;
