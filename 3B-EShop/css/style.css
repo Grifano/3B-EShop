@@ -1382,15 +1382,15 @@ textarea.input {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .offer__item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   margin: 0px 10px 30px 10px;
 }
 
@@ -1427,7 +1427,7 @@ textarea.input {
   max-width: 500px;
   border-radius: 5px 5px 0px 0px;
   padding: 0px 0px 35px 0px;
-  margin: 0px 0px 25px 0px;
+  margin-bottom: 25px;
   overflow: hidden;
 }
 
@@ -2214,14 +2214,6 @@ textarea.input {
   }
 }
 
-@media (max-width: 1110px) {
-  .offer__row {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media (max-width: 999px) {
   .gift__row {
     -ms-flex-wrap: wrap;
@@ -2714,6 +2706,9 @@ textarea.input {
 
 @media (max-width: 550px) {
   .offer__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     margin: 0px 0px 30px 0px;
   }
 }
