@@ -212,6 +212,10 @@ body.lock {
   max-width: 1140px;
 }
 
+.container_registarion {
+  max-width: 1160px;
+}
+
 .icon-menu {
   display: none;
   position: fixed;
@@ -1236,18 +1240,19 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .block-subtitle__title {
-  max-width: 220px;
   margin: 0px 0px 0px 40px;
   font-size: 36px;
   line-height: 43px;
   font-weight: 600;
   color: #232323;
+}
+
+.block-subtitle__circular-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .main-screen {
@@ -1460,6 +1465,10 @@ textarea.input {
   overflow: hidden;
 }
 
+.item-offer_cert {
+  max-width: 505px;
+}
+
 .item-offer__image {
   margin: 0px 0px 20px 0px;
   border-radius: 5px;
@@ -1476,6 +1485,10 @@ textarea.input {
 
 .item-offer__image_route {
   padding: 0px 0px 56.4% 0px;
+}
+
+.item-offer__image_cert {
+  padding: 0px 0px 71.9% 0px;
 }
 
 .item-offer__image_technik {
@@ -1560,7 +1573,6 @@ textarea.input {
   margin: 0px 25px 30px;
   padding: 0px 0px 70px 0px;
   border-bottom: 1px solid rgba(35, 35, 35, 0.1);
-  position: relative;
 }
 
 .item-offer__description_technik {
@@ -1578,6 +1590,21 @@ textarea.input {
 
 .item-offer__description ul li:last-child {
   margin: 0;
+}
+
+.item-offer__description_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 0px 25px 0px;
+}
+
+.item-offer__description_bottom {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .item-offer__footer {
@@ -1629,6 +1656,22 @@ textarea.input {
   line-height: 22px;
 }
 
+.item-offer__footer_cert {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px 20px 5px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.item-offer__footer-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .item-offer__list-route {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1640,15 +1683,17 @@ textarea.input {
   margin: 10px 0px 30px 0px;
 }
 
-.item-offer__button_description {
-  position: absolute;
-  top: 0;
-  right: 0;
+.item-offer__list-cert {
+  padding: 0;
+  margin: 0;
 }
 
 .item-offer__button_route {
-  max-width: 150px;
   margin: 0 auto;
+}
+
+.item-offer__button_cert {
+  width: 100%;
 }
 
 .gallery {
@@ -2044,6 +2089,8 @@ textarea.input {
 }
 
 .registration__block-1 {
+  max-width: 1030px;
+  margin: 0 auto;
   padding: 50px 0px;
 }
 
@@ -2057,6 +2104,12 @@ textarea.input {
 }
 
 .registration__block-3 {
+  padding: 50px 0px;
+}
+
+.registration__block-4 {
+  max-width: 1050px;
+  margin: 0 auto;
   padding: 50px 0px;
 }
 
@@ -2482,9 +2535,10 @@ textarea.input {
     margin: 0px 0px 50px 0px;
   }
 
-  .block-subtitle__title {
-    font-size: 18px;
-    line-height: 22px;
+  .block-subtitle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .main-screen {
@@ -2738,6 +2792,10 @@ textarea.input {
     padding: 25px 0px;
   }
 
+  .registration__block-4 {
+    padding: 25px 0px;
+  }
+
   .map-registration__header select {
     font-size: 18px;
     line-height: 75px;
@@ -2765,6 +2823,11 @@ textarea.input {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .offer__item:first-child,
+  .offer__item:last-child {
     margin: 0px 0px 30px 0px;
   }
 }
@@ -2844,8 +2907,19 @@ textarea.input {
     opacity: 1;
   }
 
+  .block-subtitle__title {
+    max-width: 220px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
   .offer__item {
     margin: 0px 0px 40px 0px;
+  }
+
+  .offer__item:first-child,
+  .offer__item:last-child {
+    margin: 0px 0px 30px 0px;
   }
 
   .item-offer_route {
@@ -2864,6 +2938,10 @@ textarea.input {
     padding: 0px 0px 60.2% 0px;
   }
 
+  .item-offer__image_cert {
+    padding: 0px 0px 60.2% 0px;
+  }
+
   .item-offer__title {
     font-size: 22px;
     line-height: 27px;
@@ -2876,10 +2954,6 @@ textarea.input {
   .item-offer__footer ul {
     font-size: 16px;
     line-height: 21.6px;
-  }
-
-  .item-offer__button_description {
-    top: 150px;
   }
 
   .faq__column {

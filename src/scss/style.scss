@@ -110,6 +110,9 @@ body {
 			padding: 0;
 		}
 	}
+	&_registarion {
+		max-width: 1160px;
+	}
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -143,24 +146,24 @@ body {
 	max-width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	&__title {
-		max-width: 220px;
 		margin: 0px 0px 0px 40px;
 		font-size: 36px;
 		line-height: 43px;
 		font-weight: 600;
 		color: $mainTextColor;
-		@media (max-width: $l) {
+		@media (max-width: $m) {
+			max-width: 220px;
 			font-size: 18px;
 			line-height: 22px;
 		}
 	}
 
 	&__circular-icon {
+		flex-shrink: 0;
 	}
 	@media (max-width: $l) {
-		// justify-content: center;
+		justify-content: center;
 	}
 }
 //</Одинаковые стили>====================================================================================================

@@ -10,6 +10,8 @@
 	}
 
 	&__block-1 {
+		max-width: 1030px;
+		margin: 0 auto;
 		padding: $mainPadding;
 		@media (max-width: $l) {
 			padding: $mainPaddingMobile;
@@ -39,8 +41,18 @@
 			padding: $mainPaddingMobile;
 		}
 	}
+	&__block-4 {
+		max-width: 1050px;
+		margin: 0 auto;
+		padding: $mainPadding;
+		@media (max-width: $l) {
+			padding: $mainPaddingMobile;
+		}
+	}
 
 	&__row-cards {
+	}
+	&__offer {
 	}
 }
 .map-registration {
